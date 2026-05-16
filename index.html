@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Radio menu</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell" aria-label="Interaktywne radio">
+      <section class="radio-stage" aria-label="Menu kategorii">
+        <img class="radio-image" src="assets/radio-mirex.jpg" alt="Radio Mirex z przyciskami 1-5">
+
+        <div class="radio-display" aria-live="polite">
+          <span id="displayText">KLIKNIJ OD 1-5</span>
+        </div>
+
+        <a
+          class="station-hotspot station-1"
+          href="https://www.typowymirek.pl/kategoria/koszulki"
+          data-label="KOSZULKI"
+          aria-label="Koszulki"
+        ></a>
+        <a
+          class="station-hotspot station-2"
+          href="https://www.typowymirek.pl/kategoria/bluzy"
+          data-label="BLUZY"
+          aria-label="Bluzy"
+        ></a>
+        <a
+          class="station-hotspot station-3"
+          href="https://www.typowymirek.pl/kategoria/zawieszki-zapachowe"
+          data-label="ZAWIESZKI"
+          aria-label="Zawieszki"
+        ></a>
+        <a
+          class="station-hotspot station-4"
+          href="https://www.typowymirek.pl/pl/c/Czapki-z-daszkiem/99"
+          data-label="CZAPKI"
+          aria-label="Czapki"
+        ></a>
+        <a
+          class="station-hotspot station-5"
+          href="https://www.typowymirek.pl/kategoria/ksiazka"
+          data-label="KSIAZKI"
+          aria-label="Ksiazki"
+        ></a>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
