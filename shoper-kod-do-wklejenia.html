@@ -1,0 +1,144 @@
+<!--
+  1. Wgraj plik assets/radio-mirex.jpg do plikow/galerii w Shoper.
+  2. Skopiuj publiczny adres obrazka.
+  3. Podmien w kodzie ponizej: TU_WKLEJ_PUBLICZNY_ADRES_GRAFIKI_RADIO_MIREX
+-->
+
+<div class="mirex-radio-widget">
+  <img
+    class="mirex-radio-image"
+    src="TU_WKLEJ_PUBLICZNY_ADRES_GRAFIKI_RADIO_MIREX"
+    alt="Radio Mirex z przyciskami 1-5"
+  >
+
+  <a class="mirex-radio-link mirex-radio-link-1" href="https://www.typowymirek.pl/kategoria/koszulki" aria-label="Koszulki"></a>
+  <a class="mirex-radio-link mirex-radio-link-2" href="https://www.typowymirek.pl/kategoria/bluzy" aria-label="Bluzy"></a>
+  <a class="mirex-radio-link mirex-radio-link-3" href="https://www.typowymirek.pl/kategoria/zawieszki-zapachowe" aria-label="Zawieszki"></a>
+  <a class="mirex-radio-link mirex-radio-link-4" href="https://www.typowymirek.pl/pl/c/Czapki-z-daszkiem/99" aria-label="Czapki"></a>
+  <a class="mirex-radio-link mirex-radio-link-5" href="https://www.typowymirek.pl/kategoria/ksiazka" aria-label="Ksiazki"></a>
+
+  <div class="mirex-radio-display" aria-live="polite">
+    <span class="mirex-radio-text mirex-radio-text-default">KLIKNIJ OD 1-5</span>
+    <span class="mirex-radio-text mirex-radio-text-1">KOSZULKI</span>
+    <span class="mirex-radio-text mirex-radio-text-2">BLUZY</span>
+    <span class="mirex-radio-text mirex-radio-text-3">ZAWIESZKI</span>
+    <span class="mirex-radio-text mirex-radio-text-4">CZAPKI</span>
+    <span class="mirex-radio-text mirex-radio-text-5">KSIAZKI</span>
+  </div>
+</div>
+
+<style>
+  .mirex-radio-widget {
+    position: relative;
+    width: 100%;
+    max-width: 1680px;
+    margin: 0 auto;
+    line-height: 1;
+    container-type: inline-size;
+  }
+
+  .mirex-radio-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 0;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  .mirex-radio-display {
+    position: absolute;
+    left: 6.83%;
+    top: 13.59%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    width: 31.97%;
+    height: 17.11%;
+    overflow: hidden;
+    padding: 0 1.1%;
+    border-radius: 6px;
+    pointer-events: none;
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.24) 50%, rgba(27, 255, 29, 0.06) 50%),
+      #050705;
+    background-size: 100% 7px, 100% 100%;
+    box-shadow:
+      inset 0 0 18px rgba(0, 0, 0, 0.95),
+      inset 0 0 6px rgba(26, 255, 31, 0.13);
+  }
+
+  .mirex-radio-text {
+    display: none;
+    max-width: 100%;
+    color: #19ff20;
+    font-family: "Courier New", Consolas, monospace;
+    font-size: clamp(10px, 3.25cqw, 46px);
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    line-height: 1;
+    text-transform: uppercase;
+    white-space: nowrap;
+    text-shadow:
+      0 0 0.18em rgba(25, 255, 32, 0.74),
+      0 0 0.42em rgba(25, 255, 32, 0.42),
+      0.045em 0 rgba(25, 255, 32, 0.34);
+  }
+
+  .mirex-radio-text-default {
+    display: inline-block;
+  }
+
+  .mirex-radio-link {
+    position: absolute;
+    top: 54.98%;
+    z-index: 3;
+    width: 5.29%;
+    height: 29.65%;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .mirex-radio-link::after {
+    content: "";
+    position: absolute;
+    inset: 8% 7%;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+  }
+
+  .mirex-radio-link:hover::after,
+  .mirex-radio-link:focus-visible::after {
+    border-color: rgba(255, 181, 48, 0.36);
+    background: rgba(255, 190, 70, 0.08);
+    box-shadow:
+      0 0 9px rgba(255, 181, 48, 0.26),
+      inset 0 0 12px rgba(255, 181, 48, 0.14);
+  }
+
+  .mirex-radio-link-1 { left: 43.57%; }
+  .mirex-radio-link-2 { left: 50.20%; }
+  .mirex-radio-link-3 { left: 56.77%; }
+  .mirex-radio-link-4 { left: 63.37%; }
+  .mirex-radio-link-5 { left: 69.99%; }
+
+  .mirex-radio-link:hover ~ .mirex-radio-display .mirex-radio-text-default,
+  .mirex-radio-link:focus-visible ~ .mirex-radio-display .mirex-radio-text-default {
+    display: none;
+  }
+
+  .mirex-radio-link-1:hover ~ .mirex-radio-display .mirex-radio-text-1,
+  .mirex-radio-link-1:focus-visible ~ .mirex-radio-display .mirex-radio-text-1,
+  .mirex-radio-link-2:hover ~ .mirex-radio-display .mirex-radio-text-2,
+  .mirex-radio-link-2:focus-visible ~ .mirex-radio-display .mirex-radio-text-2,
+  .mirex-radio-link-3:hover ~ .mirex-radio-display .mirex-radio-text-3,
+  .mirex-radio-link-3:focus-visible ~ .mirex-radio-display .mirex-radio-text-3,
+  .mirex-radio-link-4:hover ~ .mirex-radio-display .mirex-radio-text-4,
+  .mirex-radio-link-4:focus-visible ~ .mirex-radio-display .mirex-radio-text-4,
+  .mirex-radio-link-5:hover ~ .mirex-radio-display .mirex-radio-text-5,
+  .mirex-radio-link-5:focus-visible ~ .mirex-radio-display .mirex-radio-text-5 {
+    display: inline-block;
+  }
+</style>
