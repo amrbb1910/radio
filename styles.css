@@ -1,0 +1,135 @@
+:root {
+  color-scheme: light;
+  --display-green: #19ff20;
+  --display-glow: rgba(25, 255, 32, 0.74);
+  --highlight: rgba(255, 181, 48, 0.36);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #202020;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app-shell {
+  width: min(100vw, 1680px);
+  padding: 0;
+}
+
+.radio-stage {
+  position: relative;
+  width: 100%;
+  container-type: inline-size;
+}
+
+.radio-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.radio-display {
+  position: absolute;
+  left: 6.83%;
+  top: 13.59%;
+  width: 31.97%;
+  height: 17.11%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 0 1.1%;
+  border-radius: 0.35cqw;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.24) 50%, rgba(27, 255, 29, 0.06) 50%),
+    #050705;
+  background-size: 100% 0.42cqw, 100% 100%;
+  box-shadow:
+    inset 0 0 1.2cqw rgba(0, 0, 0, 0.95),
+    inset 0 0 0.35cqw rgba(26, 255, 31, 0.13);
+  pointer-events: none;
+}
+
+.radio-display span {
+  display: inline-block;
+  max-width: 100%;
+  color: var(--display-green);
+  font-family: "Courier New", Consolas, monospace;
+  font-size: clamp(10px, 3.25cqw, 46px);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-shadow:
+    0 0 0.18em var(--display-glow),
+    0 0 0.42em rgba(25, 255, 32, 0.42),
+    0.045em 0 rgba(25, 255, 32, 0.34);
+}
+
+.station-hotspot {
+  position: absolute;
+  top: 54.98%;
+  width: 5.29%;
+  height: 29.65%;
+  border-radius: 0.55cqw;
+  cursor: pointer;
+  outline: none;
+}
+
+.station-hotspot::after {
+  content: "";
+  position: absolute;
+  inset: 8% 7%;
+  border: 0.13cqw solid transparent;
+  border-radius: 0.4cqw;
+  transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.station-hotspot:hover::after,
+.station-hotspot:focus-visible::after {
+  border-color: var(--highlight);
+  background: rgba(255, 190, 70, 0.08);
+  box-shadow:
+    0 0 0.55cqw rgba(255, 181, 48, 0.26),
+    inset 0 0 0.75cqw rgba(255, 181, 48, 0.14);
+}
+
+.station-hotspot:active::after {
+  transform: translateY(0.18cqw);
+  background: rgba(255, 190, 70, 0.14);
+}
+
+.station-1 {
+  left: 43.57%;
+}
+
+.station-2 {
+  left: 50.2%;
+}
+
+.station-3 {
+  left: 56.77%;
+}
+
+.station-4 {
+  left: 63.37%;
+}
+
+.station-5 {
+  left: 69.99%;
+}
