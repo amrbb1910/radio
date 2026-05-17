@@ -7,4 +7,4 @@ Pliki:
 - `styles.css` - wyglad i pozycje aktywnych obszarow
 - `script.js` - zmiana napisu na wyswietlaczu po najechaniu
 - `shoper-kod-do-wklejenia.html` - wersja HTML/CSS do wklejenia w Shoper
-- `assets/radio-mirex.png` - gotowa grafika radia bez bialego tla
+- `assets/radio-mirex.jpg` - gotowa grafika radia bez bialego tla
